@@ -5,6 +5,7 @@ setup = function() {
     
     drawFish(200, 200, color(200,0,200)); 
     drawFish(300, 200, color(0,200,200));
+    drawMosquito(300,400, )
 };
 
 //🟢draw Function - will run on repeat
@@ -14,6 +15,9 @@ draw = function(){
 
 //🟢mouseClicked Function - will run when mouse is clicked
 mouseClicked = function(){
+  var fishXMove = 0;
+  
+
 
 }
 
@@ -22,6 +26,8 @@ var drawFish = function(fishX, fishY, fishColor){
   textSize(80);
   fill(fishColor);
   text("𓆝", fishX, fishY);
+  textSize(20)
+  text("🦟",60,100)
 };
 
 
