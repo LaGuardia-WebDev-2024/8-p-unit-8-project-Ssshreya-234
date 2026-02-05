@@ -3,9 +3,9 @@ setup = function() {
     size(600, 400);
     background(255,255,255,0);
     
-    drawFish(200, 200, color(200,0,200)); 
+   
     drawFish(300, 200, color(0,200,200));
-    drawMosquito(300,400, )
+    drawPancake(300, 200, color(0,200,200));
 };
 
 //🟢draw Function - will run on repeat
@@ -23,11 +23,30 @@ mouseClicked = function(){
 
 //🟡drawFish Function - will run when called
 var drawFish = function(fishX, fishY, fishColor){
-  textSize(80);
+  textSize(50);
   fill(fishColor);
-  text("𓆝", fishX, fishY);
-  textSize(20)
-  text("🦟",60,100)
+  text("🦈", fishX, fishY);
+  
+  textSize(20);
+  text("🥞", 99, 210);
+
+  textSize(20);
+  text("🍨",205, 210);
+
+  textSize(20);
+  text("🧁", 300, 100)
+
+  textSize(20);
+  text("🍫", 400,300)
+
+  textSize(20);
+  text("🍉", 450,106)
+
+  textSize(20);
+  text("🍦", 250, 100)
+
+
+  
 };
 
 
