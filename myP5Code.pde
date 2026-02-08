@@ -2,84 +2,66 @@
 setup = function() {
     size(600, 400);
     background(255,255,255,0);
-    
-    drawFish(300, 200, color(0,200,200));
-
-    
+   
+    drawFish(250, 200);
+    drawPancake(99,210);
 };
+
 
 //🟢draw Function - will run on repeat
-draw = function(){
 
-drawPancake(99,210);
-
-drawIcecream(250,110);
-
-drawChocolate(400,300);
-
- if(mouseX > 90 && mouseX < 120 && mouseY > 150 && mouseY < 180){
-    text("pancakes!", 100, 100);
-
-  }
-
-};
 
 //🟢mouseClicked Function - will run when mouse is clicked
 mouseClicked = function(){
-  var fishXMove = 0;
-  var pancakebiteSize = 100;
-
-
+ 
 }
 
 //🟡drawFish Function - will run when called
-var drawFish = function(fishX, fishY, fishColor){
+draw = function(){}
+  var drawFish = function(fishX, fishY, fishColor){
   textSize(50);
-  fill(fishColor);
-  text("🦈", fishX, fishY);
+  fill(pancakeColor)
+  text("🐬", fishX, fishY);
 }
-
 var drawPancake = function(pancakeX, pancakeY){
   textSize(50);
-  text("🥞", pancakeX, pancakeY);
+  text("🐢", pancakeX, pancakeY);
 }
+//string = text
+fill(92,24,219)
+draw = function(){
+textSize(30);
+  var myname = "Shark";
+  var message = myname + "!"
+  text(message,mouseX,mouseY);
 
 
-var drawIcecream = function(icecreamX, icereamY){
-  textSize(50);
-  text("🍦", icecreamX, icecreamY);
-}
-
-var drawChocolate = function(chocolateX, chocolateY){
-  textSize(50);
-  text("🍫", chocolateX, chocolateY);
-}
-
-/*
-  textSize(20);
-  text("🥞", 99, 210);
 
  
+  //penguin
+  textSize(30);
+  text("🐧",205, 210);
 
-  textSize(20);
-  text("🍨",205, 210);
+  //whale
+  textSize(30);
+  text("🐋", 300, 100)
 
-  textSize(20);
-  text("🧁", 300, 100)
+  //swan
+  textSize(30);
+  text("🦢", 400,300)
 
-  textSize(20);
-  text("🍫", 400,300)
+  //crockodile
+  textSize(30);
+  text("🐊", 450,106)
 
-  textSize(20);
-  text("🍉", 450,106)
-
-  textSize(20);
-  text("🍦", 250, 100)
-
-
-  
-};
+  //fish
+  textSize(30);
+  text("🐟", 150, 100)
 
 
+}
 
-*/
+
+
+
+
